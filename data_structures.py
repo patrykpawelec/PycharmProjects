@@ -1,5 +1,5 @@
 squares = [1, 4, 9, 16, 25]   # create new list
-print(squares)a
+print(squares)
 print(squares[1:4])
 
 animals = ['elephant', 'lion', 'tiger', "giraffe"]  # create new list
