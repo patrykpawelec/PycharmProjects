@@ -18,3 +18,19 @@ if name == "John" or age == 17:   # check that name is "John" or age is 17. If s
 tasks = ['task1', 'task2']    # create new list
 if len(tasks) == 0:
     print("empty")
+
+x = 28
+if x < 0:
+    print('x < 0')                      # executes only if x < 0
+elif x == 0:
+    print('x is zero')                 # if it's not true that x < 0, check if x == 0
+elif x == 1:
+    print('x == 1')                    # if it's not true that x < 0 and x != 0, check if x == 1
+else:
+    print('non of the above is true')
+name = "John"
+if name == "John":
+    print(True)
+else:
+    print(False)
+
