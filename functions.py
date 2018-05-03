@@ -21,3 +21,29 @@ square(15)
 square(23)
 square(42)
 
+def sum_two_numbers(a, b):
+    return a + b            # return result to the function caller
+c = sum_two_numbers(3, 12)  # assign result of function execution to variable 'c'
+def fib(n):
+    """This is documentation string for function. It'll be available by fib.__doc__()
+    Return a list containing the Fibonacci series up to n."""
+    result = []
+    a = 1
+    b = 1
+    while a < n:
+        result.append(a)
+        tmp_var = b
+        b=a+b
+        a=tmp_var
+    return result
+print(fib(10))
+
+def multiply_by(a, b=2):
+    return a * b
+print(multiply_by(3, 47))
+print(multiply_by(3))    # call function using default value for b parameter
+def hello(subject, name='Patriko'):
+    print("Hello %s! My name is %s" % (subject, name))
+hello("PyCharm", "Jane")    # call 'hello' function with "PyCharm as a subject parameter and "Jane" as a name
+hello("PyCharm")            # call 'hello' function with "PyCharm as a subject parameter and default value for the name
+
